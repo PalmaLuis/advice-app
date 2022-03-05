@@ -74,6 +74,10 @@ body {
   cursor: pointer;
 }
 
+.btn-wrapper .boton:hover {
+  filter: drop-shadow(0px 0px 25px #52FFA8);
+}
+
 @media screen and (min-width: 1440px) {
   .card {
     width: 35%;
