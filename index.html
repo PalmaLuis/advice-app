@@ -5,40 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    
-  </style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
   <div class="container">
 
-    <div class="title" id="title">ADVICE #117</div>
-    <div class="advice" id="advice">“It is easy to sit up and take notice, whats difficult is getting up and taking action.”</div>
-    
-    <div class="default-img">
-      <img src="./images/pattern-divider-desktop.svg" alt="">  
+    <div class="card">
+      
+      <div class="label-wrapper">
+        <label for="title-lbl" id="title-lbl">ADVICE #117</label>
+      </div>
+      
+      <div class="advice-wrapper">
+        <label for="advice-lbl" id="advice-lbl">
+          “It is easy to sit up and take notice, whats difficult is getting up and taking action.”
+        </label>
+      </div>
+      
+      <div class="wrapper-img">
+        <img src="./images/pattern-divider-desktop.svg" alt="">  
+      </div>
+      
+      <div class="wrapper-img-mobile">
+        <img src="./images/pattern-divider-mobile.svg" alt="">  
+      </div> 
+      
     </div>
-    
-    <div class="default-img-mobile">
-      <img src="./images/pattern-divider-mobile.svg" alt="">  
-    </div>
-
-    <button class="boton" onclick="callAPI()">
-      <img src="./images/icon-dice.svg" height="27px">
-    </button>
-  
+      <div class="btn-wrapper">
+        <button class="boton" onclick="callAPI()">
+        <img src="./images/icon-dice.svg" height="24px">
+        </button>
+      </div>
   </div>
   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Luis Palma</a>.
-  </div> -->
-  <script src="./callApi.js"></script>
+  <script src="./Javascript/app.js"></script>
 </body>
 
 </html>

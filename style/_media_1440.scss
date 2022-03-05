@@ -1,0 +1,29 @@
+@media screen and(min-width:1440px){
+  .card{
+    width:35%;
+    border-radius: 1rem;
+
+    .wrapper-img{
+      display:block;
+      margin: 0 0 3rem 0;
+    }
+    .wrapper-img-mobile{
+      display:none;
+    }
+    
+  }
+  .btn-wrapper{
+    margin:-35px;
+    .boton{
+      width: 64px;
+      height:64px;
+      &:hover{
+        filter: drop-shadow(0px 0px 25px #52FFA8)
+      }
+      img{
+        height:36px;
+      }
+    }
+  }
+  
+}

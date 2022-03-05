@@ -1,11 +1,6 @@
-
-// document.addEventListener('DOMContentLoaded',()=>{
-//   callAPI()
-// })
-
 const PrintContent =  (info) =>{
-  document.getElementById("title").textContent=`ADVICE #${info.id}`
-  document.getElementById("advice").textContent=`"${info.advice}"`
+  document.getElementById("title-lbl").textContent=`ADVICE #${info.id}`
+  document.getElementById("advice-lbl").textContent=`"${info.advice}"`
 }
 
 const callAPI = async()=>{
