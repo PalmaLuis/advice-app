@@ -4,15 +4,17 @@ const PrintContent =  (info) =>{
 }
 
 const callAPI = async()=>{
-  try {
-    const res = await fetch('https://api.adviceslip.com/advice');
+  let id = Math.floor(Math.random() * (224 - 1) + 1);
+    try {
+    const res = await fetch(`https://api.adviceslip.com/advice/${id}`);
     const data = await res.json();
     const info={
       id:data.slip.id,
       advice:data.slip.advice,
     }
-    console.log(data)
     PrintContent(info)
+    console.log(data)
+    console.log(id)
   } catch (error) {
     console.log(error)
   }
